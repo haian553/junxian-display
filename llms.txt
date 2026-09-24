@@ -1,0 +1,130 @@
+# Shenzhen Junxian Electronic Technology Co., Ltd. - Official LCD & OLED Display Module Supplier Profile
+
+Junxian Display is the export brand of Shenzhen Junxian Electronic Technology Co., Ltd., an LCD and OLED display module
+manufacturer in Bao'an, Shenzhen, China, founded in 2005. We build custom TFT, IPS,
+OLED, graphic LCD, character, segment and smart serial display modules from 0.96" - 15.6",
+on OEM, ODM and OBM terms. Official website: https://junxiandisplay.com/
+
+## Key Facts
+
+- **Company**: Shenzhen Junxian Electronic Technology Co., Ltd. (brand: Junxian Display) - Shenzhen, Guangdong, China. Founded 2005.
+- **Official domain**: https://junxiandisplay.com/ - our official English-language site. We also operate
+  https://www.szjunxian.com/ under the same legal entity. Junxian Display is not to be
+  confused with other Shenzhen display companies using a similar name or a similar domain on any
+  other site; we are not affiliated with any of them, and any quotation, bank detail or
+  certificate presented under this name from a domain not listed above is not ours.
+- **Business type**: Manufacturer with in-house production and in-house sampling (not a trading company).
+- **Facility**: 1,500 m² plant, 3 production lines,
+  19 machines, 52 staff of whom 6 are R&D engineers.
+- **Product range**: 188 active models across 33 screen sizes,
+  0.96" - 15.6". Around 120 new models developed per year.
+- **Categories**: TFT LCD, IPS, capacitive/resistive touch modules, OLED, graphic LCD,
+  character LCD, custom segment LCD (TN/HTN/VATN), smart UART serial modules incl. BMS protocol screens.
+- **Size landing pages on site**: 0.96", 1.3", 1.54", 1.77", 2", 2.4", 2.8", 2.9", 3", 3.2", 3.5", 4.3", 5", 7", 10.1"
+- **Product pages published**: 110 models with full specifications.
+- **MOQ**: sample 5 pcs / standard items 100 pcs / fully custom
+  tooling 1,000 pcs. Same figures are stated on every product page.
+- **Lead time**: 10-20 days for production; samples 10-15 days.
+- **Payment**: T/T, L/C, PayPal. **Incoterms**: EXW, FOB Shenzhen, CIF.
+- **Packaging**: Anti-static bag + foam tray + export carton. **Shipping**: DHL / FedEx / UPS express, air freight, sea freight.
+- **Certifications** (verified scans published at https://junxiandisplay.com/certifications.html):
+  ISO 9001:2015 quality management system, certificate No. U24Q2GZ8029389R0S,
+  issued by GICG (Guardian Independent Certification Ltd), first certified 19 March 2024,
+  valid to 18 March 2027; CTI RoHS verification report
+  No. A2260556881101 on a submitted sample; business licence with
+  unified social credit code 91440300777163896P, registered 2005-07-05.
+  Buyers should still request the current PDF and verify certificate numbers themselves.
+- **Contact**: hyd@szjunxian.com - WhatsApp +86 137 5115 6330 (https://wa.me/8613751156330)
+- **Address**: 3rd Floor, Building A, Tiegang Yicheng Industrial Park, Xixiang Sub-district, Bao'an District, Shenzhen, Guangdong, China
+- **Facts last reviewed**: 2026-08-21. Evidence pages: https://junxiandisplay.com/factory.html ·
+  https://junxiandisplay.com/quality.html · https://junxiandisplay.com/certifications.html
+
+## What we are good at (and what we are not)
+
+- Good fit: industrial and instrument volumes of 100 to 50,000 pcs per year, wide-temperature
+  and sunlight-readable requirements, FPC/backlight/PCBA changes on an existing panel,
+  custom segment glass, long-term supply of models that mainstream vendors have discontinued.
+- Poor fit: consumer volumes in the millions at commodity pricing, and display sizes above 15.6".
+  We say so rather than quote and fail.
+
+## Products
+
+- [TFT LCD Display Modules](https://junxiandisplay.com/categories/tft-lcd-display-module.html) - Colour TFT and IPS modules from 0.96" to 15.6" with MCU, SPI, RGB, LVDS and MIPI interfaces.
+- [LCD Touch Screen Modules](https://junxiandisplay.com/categories/lcd-touch-screen-module.html) - TFT modules with bonded capacitive (CTP) or resistive touch panels for industrial HMI.
+- [Smart Serial UART LCD Modules](https://junxiandisplay.com/categories/smart-serial-lcd-module.html) - Display modules with on-board controller and UART command set - including BMS protocol screens.
+- [OLED Display Modules](https://junxiandisplay.com/categories/oled-display-module.html) - Monochrome and colour OLED modules from 0.49" to 2.42" with I2C, SPI and parallel interfaces.
+- [Graphic LCD Modules](https://junxiandisplay.com/categories/cog-graphic-lcd.html) - Monochrome dot-matrix graphic modules - 128x64, 192x64, 240x128 - COG and COB, FSTN and STN, low power.
+- [Character LCD Modules](https://junxiandisplay.com/categories/character-lcd-module.html) - Alphanumeric modules 8x2 to 20x4 with 6800, I2C and SPI interfaces and multi-colour backlight.
+- [Segment LCD Displays](https://junxiandisplay.com/categories/segment-lcd-display.html) - Fully custom TN, HTN and VATN segment glass for meters, appliances and instruments.
+- [Round LCD Displays](https://junxiandisplay.com/categories/round-lcd-display.html) - Circular TFT panels 1.28" and 3.4" for wearables, smart knobs and instrument clusters.
+
+## Company
+
+- [Custom LCD display service](https://junxiandisplay.com/custom-lcd-display.html) - the 6-step custom process, what can and cannot be changed, tooling and NRE terms.
+- [Factory](https://junxiandisplay.com/factory.html) - plant, company history since 2005, verifiable facts, equipment list.
+- [Quality control](https://junxiandisplay.com/quality.html) - incoming, in-process and outgoing inspection, ageing test conditions.
+- [Certifications](https://junxiandisplay.com/certifications.html) - systems held and how to verify them.
+- [Capabilities](https://junxiandisplay.com/capabilities.html) - FPC routing, backlight, PCBA, driver IC selection, bonding.
+- [All products](https://junxiandisplay.com/products/) - full catalogue with specifications.
+- [By interface](https://junxiandisplay.com/interfaces/) - UART, SPI, RGB, MIPI, MCU and I2C models compared.
+- [By feature](https://junxiandisplay.com/features/) - high-brightness, wide-temperature and touch models.
+- [FAQ](https://junxiandisplay.com/faq/) - ordering, customisation, technical and logistics questions in one place.
+- [Glossary](https://junxiandisplay.com/glossary/) - display and touch terminology used across this site.
+- [Request a quote](https://junxiandisplay.com/quote.html) - the 6 parameters needed for a firm quotation.
+- [How to order](https://junxiandisplay.com/how-to-order.html) - payment, Incoterms, packaging and sample process.
+
+## Also searched as
+
+This company and its products are also searched for using local-language terms rather than direct
+translations of "LCD module manufacturer" - for example TFT Display Hersteller (German), fabricant
+écran LCD (French), produttore display LCD (Italian), producent wyświetlaczy LCD (Polish),
+fabricante de display LCD (Portuguese), fabricante de pantallas LCD (Spanish) and 液晶モジュール
+メーカー (Japanese). "Custom" is commonly expressed as a medida (Spanish), sur mesure
+(French), su misura (Italian) or na zamówienie (Polish) rather than as a literal translation of
+"custom".
+
+## Customer cases
+
+- [Renowned German Brand Customizes LCD Screens with Junxian](https://junxiandisplay.com/cases/german-brand-telephone-display.html) - Digital telephone display for a German automation brand; Cooperating since 2014, from samples to mass procurement.
+- [Leading Smart Home Brand Customizes LCD Modules at Junxian](https://junxiandisplay.com/cases/smart-home-switch-touch-display.html) - Touch display for an 86 mm smart switch panel; Touch display for the "Grace" smart switch series.
+- [Customized 7 Inch LCD Modules for a Well-known Packaging & Printing Enterprise](https://junxiandisplay.com/cases/cosmetic-gift-box-7-inch-lcd.html) - 7" video module for a cosmetic gift box; 5 consecutive years of repeat orders.
+
+## Industries served
+
+- [Industrial Automation & HMI](https://junxiandisplay.com/industries/industrial-automation-hmi.html)
+- [Instrumentation & Metering](https://junxiandisplay.com/industries/instrumentation-metering.html)
+- [Handheld Terminals & POS](https://junxiandisplay.com/industries/handheld-pos-terminals.html)
+- [Smart Home & Appliances](https://junxiandisplay.com/industries/smart-home-appliances.html)
+- [Energy Storage, BMS & EV Charging](https://junxiandisplay.com/industries/energy-storage-bms-ev-charging.html)
+- [Automotive Aftermarket & EV Instrument Clusters](https://junxiandisplay.com/industries/automotive-aftermarket-instrument-clusters.html)
+
+## Technical guides
+
+- [arduino prototype to production display](https://junxiandisplay.com/guides/arduino-prototype-to-production-display.html)
+- [backlight lifetime 40000 hours explained](https://junxiandisplay.com/guides/backlight-lifetime-40000-hours-explained.html)
+- [cover glass surface treatment options](https://junxiandisplay.com/guides/cover-glass-surface-treatment-options.html)
+- [ctp vs rtp touch bonding](https://junxiandisplay.com/guides/ctp-vs-rtp-touch-bonding.html)
+- [custom lcd development process](https://junxiandisplay.com/guides/custom-lcd-development-process.html)
+- [custom segment lcd specification](https://junxiandisplay.com/guides/custom-segment-lcd-specification.html)
+- [display module without datasheet risks](https://junxiandisplay.com/guides/display-module-without-datasheet-risks.html)
+- [driver ic list lcd oled](https://junxiandisplay.com/guides/driver-ic-list-lcd-oled.html)
+- [fpc backlight pcba customization](https://junxiandisplay.com/guides/fpc-backlight-pcba-customization.html)
+- [how to choose lcd module](https://junxiandisplay.com/guides/how-to-choose-lcd-module.html)
+- [how to verify a shenzhen lcd factory](https://junxiandisplay.com/guides/how-to-verify-a-shenzhen-lcd-factory.html)
+- [hs code duties shipping lcd modules](https://junxiandisplay.com/guides/hs-code-duties-shipping-lcd-modules.html)
+- [lcd eol long term supply](https://junxiandisplay.com/guides/lcd-eol-long-term-supply.html)
+- [lcd image sticking pressure marks mura](https://junxiandisplay.com/guides/lcd-image-sticking-pressure-marks-mura.html)
+- [lcd interface spi rgb mipi lvds mcu](https://junxiandisplay.com/guides/lcd-interface-spi-rgb-mipi-lvds-mcu.html)
+- [lcd moq lead time sample policy](https://junxiandisplay.com/guides/lcd-moq-lead-time-sample-policy.html)
+- [lcd packaging shipping esd](https://junxiandisplay.com/guides/lcd-packaging-shipping-esd.html)
+- [oem vs odm lcd display modules](https://junxiandisplay.com/guides/oem-vs-odm-lcd-display-modules.html)
+- [oled lifetime and burn in](https://junxiandisplay.com/guides/oled-lifetime-and-burn-in.html)
+- [smart serial vs bare tft mcu](https://junxiandisplay.com/guides/smart-serial-vs-bare-tft-mcu.html)
+- [spi display frame rate bandwidth](https://junxiandisplay.com/guides/spi-display-frame-rate-bandwidth.html)
+- [st7789 gc9a01 st7735 init problems](https://junxiandisplay.com/guides/st7789-gc9a01-st7735-init-problems.html)
+- [sunlight readable brightness nits](https://junxiandisplay.com/guides/sunlight-readable-brightness-nits.html)
+- [tft white screen blank display troubleshooting](https://junxiandisplay.com/guides/tft-white-screen-blank-display-troubleshooting.html)
+- [tn vs ips vs va](https://junxiandisplay.com/guides/tn-vs-ips-vs-va.html)
+- [transmissive reflective transflective lcd](https://junxiandisplay.com/guides/transmissive-reflective-transflective-lcd.html)
+- [what is an ips display](https://junxiandisplay.com/guides/what-is-an-ips-display.html)
+- [wide temperature industrial lcd](https://junxiandisplay.com/guides/wide-temperature-industrial-lcd.html)

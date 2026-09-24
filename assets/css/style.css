@@ -1,0 +1,733 @@
+/* Junxian Display — 工业显示模组站样式
+   设计取向：信息密度优先、规格表可读、无装饰性动效。
+   颜色只在 :root 定义，禁止在组件里写死色值。 */
+
+:root{
+  --ink:#0d1b2a; --ink-2:#22364a; --muted:#5a6b7c; --line:#e3e9f0;
+  --bg:#ffffff; --bg-soft:#f5f8fb; --bg-dark:#0d1b2a; --bg-dark-2:#16293d;
+  --brand:#0f5fc2; --brand-dark:#0a4796; --brand-soft:#e8f1fc;
+  --accent:#00a3b4; --warn:#b45309; --warn-soft:#fdf6ec; --ok:#15803d;
+  --radius:6px; --radius-lg:10px;
+  --shadow:0 1px 2px rgba(13,27,42,.06),0 4px 14px rgba(13,27,42,.06);
+  --wrap:1200px; --gap:24px;
+  --font:"Inter","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.25;color:var(--ink);margin:0 0 .6em;font-weight:700;letter-spacing:-.01em}
+h1{font-size:clamp(1.75rem,1.2rem + 2vw,2.6rem)}
+h2{font-size:clamp(1.35rem,1.1rem + 1.1vw,1.9rem);margin-top:2em}
+h3{font-size:1.15rem;margin-top:1.6em}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.25em}
+li{margin:.3em 0}
+small{font-size:.85rem}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.narrow{max-width:820px}
+.center{text-align:center}
+.muted{color:var(--muted)}
+.nowrap{white-space:nowrap}
+
+/* ---------- 顶栏 ---------- */
+.topbar{background:var(--bg-dark);color:#c3d3e2;font-size:.82rem}
+.topbar .wrap{display:flex;gap:20px;align-items:center;justify-content:space-between;
+  min-height:36px;flex-wrap:wrap}
+.topbar a{color:#c3d3e2}
+.topbar strong{color:#fff;font-weight:600}
+
+.site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;gap:var(--gap);min-height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem;
+  color:var(--ink);letter-spacing:-.02em;flex:none}
+.logo:hover{text-decoration:none}
+/* 客户真 logo（tools/make_logo.py 从 PSD 出图，比例 1.62:1，白线为透明，深浅底皆可用） */
+.logo-mark{width:75px;height:46px;display:block;flex:none}
+.logo span small{display:block;font-size:.62rem;font-weight:500;color:var(--muted);
+  letter-spacing:.08em;text-transform:uppercase;line-height:1.2}
+.nav{margin-left:auto;display:flex;gap:4px;align-items:center}
+.nav a{padding:9px 12px;border-radius:var(--radius);color:var(--ink-2);
+  font-size:.94rem;font-weight:500}
+.nav a:hover{background:var(--bg-soft);color:var(--brand);text-decoration:none}
+.nav a[aria-current="page"]{color:var(--brand);background:var(--brand-soft)}
+.nav-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--line);
+  border-radius:var(--radius);padding:8px 11px;font-size:1.1rem;cursor:pointer;color:var(--ink)}
+
+/* ---------- Products 下拉导航（借鉴旧站产品导航，本站样式重做） ---------- */
+.nav-item{position:relative;display:flex;align-items:center}
+.nav-item > a{padding-right:4px}
+.menu-toggle{background:none;border:none;padding:9px 8px 9px 2px;cursor:pointer;
+  color:var(--muted);display:flex;align-items:center;border-radius:var(--radius)}
+.menu-toggle:hover{color:var(--brand)}
+.menu-toggle svg{transition:transform .15s}
+
+.menu{position:absolute;top:calc(100% + 6px);left:-12px;width:620px;background:#fff;
+  border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:0 18px 44px rgba(13,27,42,.14);
+  padding:10px;opacity:0;visibility:hidden;transform:translateY(-6px);
+  transition:opacity .14s,transform .14s,visibility .14s;z-index:60}
+.has-menu:hover .menu,.has-menu:focus-within .menu{opacity:1;visibility:visible;transform:none}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.menu-link,.menu-foot{display:flex;gap:11px;align-items:center;padding:9px 12px;
+  border-radius:var(--radius);color:var(--ink);font-size:.9rem;font-weight:500}
+.menu-link:hover,.menu-foot:hover{background:var(--bg-soft);text-decoration:none}
+.menu-link .mi,.menu-foot .mi{flex:none;color:var(--brand)}
+.menu-bottom{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:8px;
+  padding-top:10px;border-top:1px solid var(--line)}
+.menu-foot .mi{color:var(--accent)}
+
+@media (max-width:900px){
+  .menu{width:auto;min-width:0}
+}
+@media (max-width:760px){
+  /* 移动端：面板变成导航里的缩进列表，点箭头展开 */
+  .nav-item{flex-wrap:wrap;width:100%}
+  .nav-item > a{flex:1}
+  .menu-toggle{padding:9px 12px}
+  .menu{position:static;width:100%;opacity:1;visibility:visible;transform:none;
+    display:none;box-shadow:none;border:none;border-left:2px solid var(--line);
+    border-radius:0;margin:2px 0 6px 12px;padding:2px 0 2px 8px}
+  .has-menu:hover .menu,.has-menu:focus-within .menu{display:none}
+  .nav-item.open .menu{display:block}
+  .nav-item.open .menu-toggle svg{transform:rotate(180deg)}
+  .menu-grid,.menu-bottom{grid-template-columns:1fr}
+  .menu-bottom{margin-top:4px;padding-top:6px}
+  .menu-link,.menu-foot{padding:9px 10px}
+}
+
+/* ---------- 按钮 ---------- */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:var(--radius);
+  font-weight:600;font-size:.95rem;border:1px solid transparent;cursor:pointer;
+  transition:background .15s,border-color .15s}
+.btn:hover{text-decoration:none}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-dark);color:#fff}
+/* 2026-09-22 排查 P0-1：顶栏 Get a Quote 在 .nav 里，.nav a{color:ink-2}（0,1,1）压过 .btn-primary（0,1,0），
+   蓝底深字对比度只有 2.03:1，hover 时 .nav a:hover 又把底色换成浅灰。这里按同等优先级把按钮样式补回来。 */
+.nav a.btn-primary,.nav a.btn-primary:hover{color:#fff}
+.nav a.btn-primary:hover{background:var(--brand-dark)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.btn-wa{background:#25d366;color:#fff}
+.btn-wa:hover{background:#1da851;color:#fff}
+.btn-lg{padding:14px 26px;font-size:1rem}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---------- Hero ---------- */
+.hero{background:linear-gradient(160deg,var(--bg-dark) 0%,var(--bg-dark-2) 60%,#1d3a55 100%);
+  color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-80px;width:520px;height:520px;
+  background:radial-gradient(circle,rgba(0,163,180,.22),transparent 62%);pointer-events:none}
+.hero h1{color:#fff;max-width:22ch}
+.hero .lede{font-size:1.12rem;color:#c9dbe9;max-width:62ch;margin-bottom:26px}
+.hero .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.1);color:#fff;border-color:#fff}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;position:relative;z-index:1}
+.hero-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.hero-fact{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);
+  border-radius:var(--radius-lg);padding:16px 18px}
+.hero-fact b{display:block;font-size:1.5rem;color:#fff;line-height:1.2}
+.hero-fact span{font-size:.82rem;color:#a9c2d6}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+
+/* 首页 hero 底图：渐变仍在，图垫在渐变下面（图不到位时纯渐变，观感不塌）。
+   ⚠ 2026-09-06 实测：首页 hero 是 1.25fr + .75fr 两栏，右栏被 4 张数据卡占满，
+   左栏是标题和按钮 —— **整幅宽度都被内容占住，没有留给产品主体的空位**。
+   换成真实产品图后 opacity .42 会让数据卡看起来"压在产品上"，屏幕被卡片切碎。
+   所以首页的图只能当氛围底纹（.22），产品主体展示交给品类页 .cat-hero
+   （那边没有右栏卡片，同一张 3:1 图铺进去产品是完整可见的）。
+   要在首页真正展示产品，得先改 hero 版式，不是调这个数值能解决的。 */
+.hero.has-banner::before{content:"";position:absolute;inset:0;
+  background-image:var(--hero-image);background-size:cover;background-position:right 42%;
+  background-repeat:no-repeat;opacity:.22}
+.hero.has-banner > .wrap{position:relative;z-index:1}
+
+/* 首页分类卡带 4:3 缩略图 */
+.cat-card.has-img{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.cc-img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--bg-soft);
+  border-bottom:1px solid var(--line)}
+.cc-body{display:block;padding:16px 18px}
+.cat-card.has-img h3{margin:0 0 6px}
+.cat-card.has-img .n{margin-top:10px}
+
+@media (max-width:560px){
+  .hero.has-banner::before{background-image:var(--hero-image-800,var(--hero-image));
+    background-position:center 45%;opacity:.2}
+}
+
+/* ---------- 分类页 banner（图走 CSS 变量，换图只改变量，不动 HTML） ---------- */
+/* 高度由 padding 决定，**不要加 min-height** —— xiangfu 踩过：宽屏被 vw 顶高，
+   比别的页高一大截。移动档自动换 -800 那张。 */
+.cat-hero{position:relative;background:var(--bg-dark);color:#fff;overflow:hidden;
+  padding:58px 0 44px}
+.cat-hero::before{content:"";position:absolute;inset:0;
+  background-image:var(--hero-image);background-size:cover;background-position:right 38%;
+  background-repeat:no-repeat}
+.cat-hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(13,27,42,.95) 0%,rgba(13,27,42,.86) 42%,
+    rgba(13,27,42,.42) 100%)}
+.cat-hero .wrap{position:relative;z-index:1}
+.cat-hero h1{color:#fff;max-width:19ch}
+.cat-hero .lede{color:#c9dbe9;max-width:56ch}
+.cat-hero .eyebrow{color:var(--accent)}
+.cat-hero .muted{color:#9db3c7}
+.cat-hero .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+.cat-hero .btn-ghost:hover{background:rgba(255,255,255,.1);color:#fff;border-color:#fff}
+/* 面包屑在 banner 上时要跟着反色，否则深底上看不见（xiangfu 踩过的坑之一） */
+.cat-hero .crumbs{background:none;border:none;padding:0 0 14px}
+/* crumbs() 自带一层 .wrap，套进 hero 的 wrap 里会双重缩进 —— 抹掉内层边距 */
+.cat-hero .crumbs .wrap{padding:0;max-width:none}
+.cat-hero .crumbs a{color:#a9c2d6}
+.cat-hero .crumbs span{color:#7e97ad}
+
+@media (max-width:560px){
+  .cat-hero{padding:40px 0 32px}
+  .cat-hero::before{background-image:var(--hero-image-800,var(--hero-image));
+    background-position:center 40%}
+  /* 手机上文字占满全宽，产品必然被压住 —— 遮罩改成上下向，别指望展示主体 */
+  .cat-hero::after{background:linear-gradient(180deg,rgba(13,27,42,.88) 0%,
+    rgba(13,27,42,.94) 100%)}
+}
+
+/* ---------- 区块 ---------- */
+section{padding:52px 0}
+section.soft{background:var(--bg-soft)}
+section.tight{padding:34px 0}
+.sec-head{max-width:70ch;margin-bottom:30px}
+.sec-head h2{margin-top:0}
+.sec-head p{color:var(--muted);margin:0}
+
+/* ---------- 栅格与卡片 ---------- */
+.grid{display:grid;gap:var(--gap)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:22px;box-shadow:var(--shadow)}
+.card h3{margin-top:0;font-size:1.05rem}
+.card p:last-child{margin-bottom:0}
+/* 带示意图的 card（支柱页四级定制）。图垫在文字上方、与卡片同宽、贴着上边缘的圆角。
+   这里 aspect-ratio:4/3 + cover 是**故意**的：四张图并排，比例必须一致，
+   跟 .shot-inline 那种"单张实拍不裁"的取舍不同，这里齐比不裁重要。 */
+.card.has-img{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.card-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--bg-soft);
+  border-bottom:1px solid var(--line)}
+.card.has-img > div{padding:20px 22px}
+.card.has-img h3{margin:0 0 8px}
+
+.p-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-lg);overflow:hidden;transition:border-color .15s,box-shadow .15s}
+.p-card:hover{border-color:var(--brand);box-shadow:var(--shadow);text-decoration:none}
+/* ⚠ 与 .gallery .main 同一个坑、同一个修法（2026-09-08，Jacken 从品类页卡片发现）：
+   grid 的隐式行高是 auto，img 的 height:100% 找不到确定基准，会按固有比例撑高、
+   被 overflow:hidden 从底部裁掉 —— 四宫格拼图和多尺寸展示图在卡片里都少了一整行。
+   修 .gallery 那次只改了产品页画廊，漏了这里，所以品类页卡片一直还是裁的。
+   ★ 判据：**凡 `aspect-ratio` 容器里放 `object-fit:contain` 的图，容器一律用 flex**，
+   不要用 grid（要用 grid 得额外写 grid-auto-rows:100%，不如 flex 直白）。 */
+.p-card .thumb{aspect-ratio:4/3;background:var(--bg-soft);display:flex;align-items:center;
+  justify-content:center;border-bottom:1px solid var(--line);overflow:hidden}
+.p-card .thumb img{max-width:100%;max-height:100%;object-fit:contain;padding:10px}
+.p-card .body{padding:16px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.p-card h3{font-size:.98rem;margin:0;line-height:1.4;color:var(--ink)}
+.p-card .meta{font-size:.82rem;color:var(--muted);margin-top:auto}
+.p-card .model{font-family:var(--mono);font-size:.76rem;color:var(--brand)}
+
+.cat-card{display:block;padding:20px;border:1px solid var(--line);border-radius:var(--radius-lg);
+  background:#fff;color:var(--ink)}
+.cat-card:hover{border-color:var(--brand);text-decoration:none;box-shadow:var(--shadow)}
+.cat-card h3{margin:0 0 6px;font-size:1.02rem;color:var(--brand)}
+.cat-card p{margin:0;font-size:.88rem;color:var(--muted)}
+.cat-card .n{font-size:.78rem;color:var(--muted);margin-top:10px;display:block}
+
+/* ---------- 规格表 ---------- */
+.table-wrap{overflow-x:auto;margin:0 0 1.4em;border:1px solid var(--line);border-radius:var(--radius-lg)}
+table{width:100%;border-collapse:collapse;font-size:.92rem;background:#fff}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--bg-soft);font-weight:600;color:var(--ink-2);white-space:nowrap;
+  font-size:.85rem;letter-spacing:.02em}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--bg-soft)}
+.spec-table th{width:38%;background:var(--bg-soft);font-weight:600;color:var(--ink-2)}
+.spec-table td{font-family:var(--mono);font-size:.88rem}
+
+/* ---------- 首页参数选型器（对标 Newhaven 的 parametric search） ---------- */
+.sel-controls{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;margin-bottom:14px}
+.sel-controls label{display:flex;flex-direction:column;gap:5px;font-size:.82rem;
+  font-weight:600;color:var(--ink-2)}
+.sel-controls select{padding:10px 12px;border:1px solid var(--line);border-radius:var(--radius);
+  font-size:.94rem;font-family:inherit;color:var(--ink);background:#fff;min-width:170px}
+.sel-controls select:focus{outline:2px solid var(--brand);outline-offset:1px}
+.sel-controls .btn{padding:10px 18px}
+.sel-count{margin:0 0 12px}
+.selector .table-wrap{max-height:520px;overflow-y:auto}
+/* 选型表行首缩略图（2026-09-08 Jacken 提议）：101 行纯文字要逐行读才分得清
+   圆屏/段码/字符屏，加一列图能一眼扫。图由 make_row_thumbs.py 出 96×72、单张 1-3KB，
+   全站 115 张合计 66KB —— 直接引用 700×700 主图会给首页加 4MB。
+   ⚠ 这里 img 直接给固定宽高 + contain，**不套 aspect-ratio 容器**，
+   避开 .gallery/.p-card 那个 grid 行高 auto 的坑。 */
+.sel-thumb{width:64px;padding-right:4px !important}
+.sel-thumb img{width:48px;height:36px;object-fit:contain;background:#fff;
+  border:1px solid var(--line);border-radius:4px}
+/* 缩略图整格可点，跳到该型号的 PDP —— 和同一行的 Model 链接同一个目标，
+   给的是更大的点击热区，不是第二个去处。 */
+.sel-thumb a{display:block;line-height:0}
+.sel-thumb a:hover img{border-color:var(--brand)}
+/* 移动端缩小而不是隐藏：小屏上图比文字更快分辨，而且**隐藏 td 不隐藏 th 会让整表错位**
+   （th 也带 .sel-thumb 才好一起控制，见 home_blocks.py 的表头）。
+ */
+/* 六宫格工厂拼图（首页公司板块）：通栏显示，要解掉 .shot-inline 的 max-height:520 ——
+   1160px 宽时它的自然高度约 580px，会被那条规则从底部裁掉一整行格子。 */
+.shot-inline.collage img{max-height:none}
+
+@media (max-width:560px){
+  .sel-thumb{width:44px}
+  .sel-thumb img{width:34px;height:26px}
+}
+.sel-empty{border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff;
+  padding:22px 24px}
+.sel-empty p{max-width:66ch}
+@media (max-width:560px){
+  .sel-controls{gap:10px}
+  .sel-controls label{flex:1 1 100%}
+  .sel-controls select{width:100%;min-width:0}
+}
+
+/* 可改项卡片：图标在标题上方 */
+.mod-card .mi-lg{width:28px;height:28px;color:var(--brand);margin-bottom:10px}
+.mod-card h3{margin-top:0}
+
+/* PDP 机械尺寸图：线稿要给足宽度，缩太小就看不清标注了 */
+.drawing{margin:14px 0 0;border:1px solid var(--line);border-radius:var(--radius-lg);
+  background:#fff;padding:10px}
+.drawing img{width:100%;height:auto;display:block}
+
+/* ---------- 信息条 / 徽章 ---------- */
+.factbar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden}
+.factbar div{background:#fff;padding:18px 20px}
+.factbar b{display:block;font-size:1.45rem;color:var(--brand);line-height:1.2}
+.factbar span{font-size:.84rem;color:var(--muted)}
+/* 互动计算器(guides 内嵌,2026-08-21)：输入区+结果区，浅色卡片风格与站内 .card 一致 */
+.calc-tool{border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--bg-soft);
+  padding:20px 22px;margin:18px 0}
+.calc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.calc-field label{display:block;font-size:.82rem;color:var(--muted);margin-bottom:5px}
+.calc-field input,.calc-field select{width:100%;padding:9px 11px;border:1px solid var(--line);
+  border-radius:var(--radius);font:inherit;background:#fff}
+.calc-result{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.calc-numbers{display:flex;flex-wrap:wrap;gap:22px;margin-bottom:8px}
+.calc-numbers div{display:flex;flex-direction:column}
+.calc-numbers b{font-size:1.35rem;color:var(--brand);line-height:1.2}
+.calc-numbers span{font-size:.8rem;color:var(--muted)}
+.calc-result p{margin:0;font-size:.95rem}
+@media(max-width:640px){.calc-grid{grid-template-columns:1fr 1fr}}
+.badge{display:inline-block;padding:3px 9px;border-radius:100px;font-size:.75rem;
+  font-weight:600;background:var(--brand-soft);color:var(--brand-dark)}
+.badge-line{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:.92rem}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;font-weight:600}
+
+.callout{border-left:3px solid var(--brand);background:var(--brand-soft);
+  padding:16px 20px;border-radius:0 var(--radius) var(--radius) 0;margin:0 0 1.4em}
+.callout p:last-child{margin-bottom:0}
+.callout.warn{border-color:var(--warn);background:#fdf6ec}
+
+/* ---------- FAQ ---------- */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:2px 0}
+.faq summary{cursor:pointer;padding:16px 0;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--brand);font-size:1.3rem;line-height:1;flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq .answer{padding:0 0 18px;color:var(--ink-2)}
+.faq .answer p:last-child{margin-bottom:0}
+
+/* ---------- 术语表 / 站点地图（2026-09-02） ---------- */
+.gloss-list{margin:0;display:grid;gap:18px}
+.gloss-item{border-bottom:1px solid var(--line);padding-bottom:16px}
+.gloss-item dt{font-weight:700;margin-bottom:4px}
+.gloss-item dd{margin:0;color:var(--ink-2)}
+.sitemap-list{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.92rem}
+.sitemap-list a{color:var(--ink-2)}
+
+/* ---------- 步骤 ---------- */
+.steps{counter-reset:s;display:grid;gap:16px}
+.steps li{counter-increment:s;list-style:none;position:relative;padding-left:52px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;
+  border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;
+  font-weight:700;font-size:.92rem}
+.steps h3{margin:0 0 4px;font-size:1rem}
+.steps p{margin:0;color:var(--muted);font-size:.92rem}
+
+/* ---------- CTA 区 ---------- */
+.cta{background:var(--bg-dark);color:#fff;border-radius:var(--radius-lg);padding:34px 38px;
+  display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cta h2{color:#fff;margin:0 0 6px;font-size:1.4rem}
+.cta p{margin:0;color:#b9cde0;max-width:56ch}
+.cta .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.cta .btn-ghost:hover{background:rgba(255,255,255,.12);color:#fff}
+
+/* ---------- 表单 ---------- */
+.form-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:26px;box-shadow:var(--shadow)}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:.88rem;font-weight:600;margin-bottom:5px;color:var(--ink-2)}
+.field input,.field select,.field textarea{width:100%;padding:11px 13px;border:1px solid var(--line);
+  border-radius:var(--radius);font:inherit;font-size:.95rem;background:#fff;color:var(--ink)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--brand);
+  outline-offset:-1px;border-color:var(--brand)}
+.field textarea{min-height:110px;resize:vertical}
+.field .hint{font-size:.8rem;color:var(--muted);margin-top:4px}
+.form-note{font-size:.82rem;color:var(--muted);margin-top:12px}
+
+/* ---------- 面包屑 / 分页 ---------- */
+.crumbs{font-size:.85rem;color:var(--muted);padding:14px 0;border-bottom:1px solid var(--line)}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--brand)}
+.crumbs span{margin:0 6px;opacity:.5}
+.pager{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:32px}
+.pager a,.pager span{padding:8px 14px;border:1px solid var(--line);border-radius:var(--radius);
+  font-size:.9rem;background:#fff}
+.pager .cur{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* ---------- 产品页布局 ---------- */
+.pdp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:44px;align-items:start}
+/* ⚠ 这里**必须是 flex，不能用 grid**（2026-09-08 实测，115 款 PDP 里 102 款曾中招）。
+   原来写的是 `display:grid;place-items:center` + img `width:100%;height:100%`。
+   grid 的隐式行高是 `auto`＝由内容决定，于是 img 的 `height:100%` 要相对于一个
+   由它自己撑出来的行 —— 循环解析不了，浏览器回退成按固有比例算高度：
+   700×700 的正方形主图宽撑到 542 就把高也撑到 542，超出 4:3 容器 135px，
+   被 overflow:hidden 从底部裁掉 25%，object-fit:contain 压根没机会生效。
+   （试过只删 place-items:center，没用 —— 根因是行高 auto，不是对齐方式。
+     grid 要修得写 `grid-auto-rows:100%`，不如直接用 flex 直白。）
+   flex 容器的高度由 aspect-ratio 定死，flex item 的 max-height:100% 有确定基准。 */
+.gallery .main{border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;
+  background:var(--bg-soft);aspect-ratio:4/3;display:flex;align-items:center;
+  justify-content:center}
+.gallery .main img{max-width:100%;max-height:100%;object-fit:contain;padding:16px}
+.gallery .thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}
+.gallery .thumbs img{border:1px solid var(--line);border-radius:var(--radius);
+  background:#fff;aspect-ratio:1;object-fit:contain;padding:4px;cursor:pointer}
+.gallery .thumbs img:hover{border-color:var(--brand)}
+/* 2026-09-24 悬停即切主图：当前显示的那张常亮蓝框（2px 用 box-shadow 画，不改尺寸不跳动） */
+.gallery .thumbs img.is-active{border-color:var(--brand);box-shadow:0 0 0 1px var(--brand)}
+.gallery .thumbs img:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.pdp-side .price-note{font-size:.9rem;color:var(--muted)}
+.hl-list{list-style:none;padding:0;margin:0 0 18px}
+.hl-list li{padding-left:24px;position:relative;margin:.45em 0}
+.hl-list li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;
+  border-radius:2px;background:var(--accent)}
+
+/* ---------- 页脚 ---------- */
+.site-footer{background:var(--bg-dark);color:#a9c2d6;padding:48px 0 24px;margin-top:60px;font-size:.92rem}
+.site-footer h4{color:#fff;font-size:.86rem;letter-spacing:.09em;text-transform:uppercase;margin:0 0 14px}
+.site-footer a{color:#a9c2d6}
+.site-footer a:hover{color:#fff}
+.site-footer ul{list-style:none;padding:0;margin:0}
+.site-footer li{margin:.45em 0}
+/* 2026-09-24 Jacken：页脚第一栏加站点 logo（与顶栏同一套 logo.png/@2x，白线透明，深底可用），与品牌名同一行 */
+.foot-brand{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+.foot-brand h4{margin:0}
+.foot-logo{display:block;flex:none;line-height:0}
+.foot-logo img{width:64px;height:auto}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:28px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:18px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.84rem}
+
+/* ---------- WhatsApp 浮标 ---------- */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;
+  gap:9px;background:#25d366;color:#fff;padding:12px 17px;border-radius:100px;font-weight:600;
+  font-size:.92rem;box-shadow:0 6px 22px rgba(0,0,0,.22)}
+.wa-float:hover{background:#1da851;color:#fff;text-decoration:none}
+.wa-float svg{width:22px;height:22px;flex:none;fill:currentColor}
+
+/* ---------- 工厂实拍网格 ---------- */
+.shot-grid{margin:0}
+.shot{margin:0;display:flex;flex-direction:column}
+.shot img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--bg-soft);
+  border:1px solid var(--line);border-radius:var(--radius-lg)}
+.shot figcaption{margin-top:10px;font-size:.88rem;color:var(--muted);line-height:1.5}
+.shot-wide img{aspect-ratio:16/7}
+/* 正文段落之间的单张实拍：**不设 aspect-ratio**，按原图比例显示。
+   工厂实拍的源图比例从 1.0 到 2.2 都有，统一裁成 4:3 或 16:7 会把主体裁掉一大块
+   （meeting-room 是 1:1，裁 16:7 要切掉 56%）。这些图分散在不同板块、不会并排出现，
+   比例不齐反而不是问题，裁掉内容才是。
+   ⚠ 配 height:auto —— <img> 的 width/height 属性会被映射成 CSS 宽高，
+   只写 width:100% 不写 height:auto 会把图拉成变形（playbook §3.4 那条实测教训）。 */
+   跟 .shot 一起用（class="shot shot-inline"），边框圆角和 figcaption 都继承过来，
+   这里只解掉 aspect-ratio 的固定裁切。
+   max-height:520px 是给正方形图兜底：meeting-room 是 1:1，在 780px 宽的窄栏里会渲染成
+   780×780 占满整屏，而且原图只有 600px 宽、放大 30% 会糊。超过 520 的部分靠
+   object-fit:cover 裁掉（只有 1:1 那张会触发，横图 448–585px 基本不裁）。 */
+.shot-inline{margin:26px 0 0}
+.shot-inline img{aspect-ratio:auto;height:auto;max-height:520px;object-fit:cover}
+
+/* ---------- 手写技术示意图（tools/lib_diagrams.py 生成） ----------
+   骨架：SVG 只画几何（左栏），文字全是真 HTML 图例（右栏），编号一一对应。
+   第一版把文字画进 SVG，移动端右半边连同结论徽章一起被截掉 —— 详见 lib_diagrams.py 顶部。
+   SVG 内部只写 class，颜色字体全在这里定：presentation attribute 不支持 var()。 */
+.diagram{margin:0 0 1.6em}
+.dg-split{display:grid;grid-template-columns:230px minmax(0,1fr);gap:26px;align-items:start;
+  border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff;padding:24px}
+.dg-split figcaption{grid-column:1/-1;margin:0;padding-top:16px;border-top:1px solid var(--line);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55}
+.dg-art{align-self:center}
+.dg-art svg{display:block;width:100%;max-width:250px;height:auto;margin:0 auto}
+.dg-legend{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.dg-legend li{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:6px 12px;
+  align-items:start;padding:11px 0;border-top:1px solid var(--line)}
+.dg-legend li:first-child{border-top:0;padding-top:0}
+.dg-legend li:last-child{padding-bottom:0}
+.dg-txt strong{display:block;font-size:.97rem;color:var(--ink);line-height:1.4}
+.dg-txt span{display:block;font-size:.87rem;color:var(--muted);line-height:1.5;margin-top:2px}
+.dg-txt .dg-warn{color:var(--warn);font-weight:600}
+.dg-num{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;
+  font-size:.76rem;font-weight:700;background:var(--brand-soft);color:var(--brand-dark);
+  border:1px solid var(--brand)}
+.is-fixed .dg-num{background:var(--warn-soft);color:var(--warn);border-color:var(--warn)}
+.dg-tag{align-self:start;white-space:nowrap;font-size:.74rem;font-weight:600;
+  padding:3px 10px;border-radius:11px}
+.dg-tag-o{background:var(--brand-soft);color:var(--brand-dark);border:1px solid var(--brand)}
+.dg-tag-f{background:var(--warn-soft);color:var(--warn);border:1px solid var(--warn)}
+/* 三个面明度递减，够表达"一块板"而不用画阴影 */
+.dg-top-o{fill:var(--brand-soft);stroke:var(--brand);stroke-width:1}
+.dg-front-o{fill:var(--brand);fill-opacity:.22;stroke:var(--brand);stroke-width:1}
+.dg-side-o{fill:var(--brand);fill-opacity:.34;stroke:var(--brand);stroke-width:1}
+.dg-top-f{fill:var(--warn-soft);stroke:var(--warn);stroke-width:1.5}
+.dg-front-f{fill:var(--warn);fill-opacity:.22;stroke:var(--warn);stroke-width:1.5}
+.dg-side-f{fill:var(--warn);fill-opacity:.34;stroke:var(--warn);stroke-width:1.5}
+.dg-dot-o{fill:var(--brand-soft);stroke:var(--brand);stroke-width:1}
+.dg-dot-f{fill:var(--warn-soft);stroke:var(--warn);stroke-width:1.5}
+.dg-dot-t{font-family:var(--font);font-size:12px;font-weight:700}
+.dg-dot-t-o{fill:var(--brand-dark)}
+.dg-dot-t-f{fill:var(--warn)}
+.dg-cap{font-family:var(--font);font-size:12px;fill:var(--muted)}
+.dg-arrow{stroke:var(--muted);stroke-width:1.2}
+.dg-arrow-h{fill:var(--muted)}
+/* 单栏：图在上、图例在下。徽章挪到文字下方，避免挤成一列窄条 */
+@media (max-width:760px){
+  .dg-split{grid-template-columns:1fr;gap:20px;padding:20px}
+  .dg-art svg{max-width:230px}
+  .dg-legend li{grid-template-columns:26px minmax(0,1fr)}
+  .dg-tag{grid-column:2;justify-self:start;margin-top:4px}
+}
+
+/* ---------- 证书卡 ---------- */
+.doc-card{display:grid;grid-template-columns:210px 1fr;gap:24px;align-items:start;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:22px;box-shadow:var(--shadow)}
+.doc-card+.doc-card{margin-top:18px}
+.doc-scan{display:block;text-decoration:none}
+.doc-scan img{width:100%;height:auto;display:block;border:1px solid var(--line);
+  border-radius:8px;background:#fff}
+.doc-scan span{display:block;margin-top:8px;text-align:center;font-size:.82rem}
+.doc-body h3{margin:0 0 12px;font-size:1.12rem}
+.doc-kv{margin:0 0 12px;display:grid;gap:7px}
+.doc-kv>div{display:grid;grid-template-columns:150px 1fr;gap:12px;font-size:.92rem}
+.doc-kv dt{color:var(--muted)}
+.doc-kv dd{margin:0;word-break:break-word}
+.doc-body p{margin:0;font-size:.92rem}
+
+/* ---------- 响应式 ---------- */
+/* 行业页首屏配图 */
+.ind-shot{display:block;text-decoration:none}
+.ind-shot img{width:100%;height:auto;border:1px solid var(--line);border-radius:var(--radius-lg);
+  background:#fff;display:block}
+.ind-shot span{display:block;margin-top:10px;text-align:center}
+
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .pdp{grid-template-columns:1fr;gap:32px}
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .factbar{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:28px}
+}
+@media (max-width:760px){
+  section{padding:38px 0}
+  h2{margin-top:1.5em}
+  .nav{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:stretch;padding:8px;gap:2px;display:none;
+    box-shadow:0 10px 24px rgba(13,27,42,.08)}
+  .nav.open{display:flex}
+  .nav-toggle{display:block}
+  .site-header .wrap{position:relative;min-height:60px}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .doc-card{grid-template-columns:1fr;gap:18px}
+  .doc-scan{max-width:210px}
+  .doc-kv>div{grid-template-columns:1fr;gap:2px}
+  .doc-kv dt{font-size:.82rem}
+  .cta{padding:26px 22px}
+  .spec-table th{width:46%}
+  .topbar .wrap{font-size:.76rem;gap:10px}
+  .hero{padding:44px 0 40px}
+  .wa-float span{display:none}
+  .wa-float{padding:14px;border-radius:50%}
+  /* 2026-09-22 排查：①输入框 <16px 时 iOS 点进去会自动放大页面（P1-6）；
+     ②页脚最后几行别被 WhatsApp 浮标盖住；③顶栏只留 MOQ·交期一行、面包屑末级截断（P2-4） */
+  .field input,.field select,.field textarea,.cf input,.cf select,
+  .calc-field input,.calc-field select{font-size:16px}
+  .site-footer{padding-bottom:84px}
+  .topbar .wrap>span:first-child{display:none}
+  .crumbs span[aria-current]{display:inline-block;max-width:58vw;overflow:hidden;
+    text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}
+  /* 产品总览页手机端两列紧凑卡（排查 P1-8：单列大卡 375px 下 68 屏） */
+  [data-filter-grid].grid{grid-template-columns:1fr 1fr;gap:10px}
+  [data-filter-grid] .p-card .body{padding:10px 11px;gap:5px}
+  [data-filter-grid] .p-card h3{font-size:.82rem;line-height:1.35}
+  [data-filter-grid] .p-card .thumb img{padding:6px}
+}
+@media print{
+  .site-header,.site-footer,.wa-float,.cta,.topbar{display:none}
+}
+
+/* 报价页的"正在询价哪一款"卡片（?p=<slug> 时由 main.js 填充，默认 hidden）。
+   ⚠ 用 flex 不用 grid —— 同 .gallery/.p-card 那个坑：aspect-ratio 容器配 grid
+   会让子图百分比高度失效。这里图给固定宽高，更简单也更稳。 */
+.quote-ctx{display:flex;gap:14px;align-items:center;margin:0 0 20px;padding:12px 14px;
+  background:var(--brand-soft);border:1px solid var(--line);border-radius:var(--radius-lg)}
+.quote-ctx-img{width:72px;height:54px;object-fit:contain;background:#fff;flex:none;
+  border:1px solid var(--line);border-radius:var(--radius)}
+.quote-ctx strong{display:block;font-size:.98rem;line-height:1.35}
+.quote-ctx .muted{display:block;font-size:.85rem;margin-top:2px}
+.quote-ctx a{display:inline-block;font-size:.85rem;margin-top:4px}
+
+/* 感谢页第二步的拖拽上传区（端点填了才会出现，见 build_meta.upload_block）。 */
+.dropzone{position:relative;border:2px dashed var(--line);border-radius:var(--radius-lg);
+  background:var(--bg-soft);padding:22px 18px;margin:0 0 16px;transition:border-color .15s,background .15s}
+.dropzone.is-over{border-color:var(--brand);background:var(--brand-soft)}
+.dropzone input[type=file]{position:absolute;opacity:0;width:.1px;height:.1px}
+.dropzone label{display:block;text-align:center;cursor:pointer}
+.dropzone label strong{display:block;font-size:1rem;color:var(--ink)}
+.dropzone label span{display:block;font-size:.85rem;color:var(--muted);margin-top:4px}
+/* 键盘用户：input 视觉上隐藏了，聚焦时要让整个区域显出焦点环 */
+.dropzone input[type=file]:focus-visible + label{outline:2px solid var(--brand);outline-offset:6px}
+.dz-list{list-style:none;padding:0;margin:14px 0 0}
+.dz-list:empty{display:none}
+.dz-list li{display:flex;align-items:center;gap:10px;justify-content:space-between;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:7px 10px;margin:6px 0;font-size:.88rem}
+.dz-list .over{color:var(--warn)}
+.dz-del{border:none;background:none;cursor:pointer;font-size:1.1rem;line-height:1;
+  color:var(--muted);padding:0 4px}
+.dz-del:hover{color:var(--warn)}
+/* 2026-09-24 上传文件缩略图：图片 52px 方形预览（cover 裁中间），非图片显示扩展名方块 */
+.dz-thumb{width:52px;height:52px;flex:none;object-fit:cover;border-radius:4px;
+  border:1px solid var(--line);background:var(--bg-soft)}
+.dz-doc{display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;
+  letter-spacing:.04em;color:var(--brand)}
+.dz-name{flex:1;min-width:0;overflow-wrap:anywhere}
+
+/* ---------- products/ 目录页：筛选侧栏 + 网格同屏 ---------- */
+/* 改前是四个导航板块叠在产品上面，要滚约 1000px 才看到第一个产品，
+   而且上面的标签是"跳走"、下面的下拉是"筛选"，两套逻辑混在一起。 */
+.catalog{display:grid;grid-template-columns:250px minmax(0,1fr);gap:28px;align-items:start}
+.catalog-side{position:sticky;top:84px}      /* 84px = 顶栏高度 + 一点余量 */
+.catalog-toggle{display:none;width:100%}
+.catalog-filters{display:flex;flex-direction:column;gap:14px;
+  border:1px solid var(--line);border-radius:var(--radius-lg);padding:16px;background:var(--bg-soft)}
+.cf{display:flex;flex-direction:column;gap:5px;font-size:.82rem;font-weight:600;color:var(--ink-2)}
+.cf input,.cf select{padding:9px 10px;border:1px solid var(--line);border-radius:var(--radius);
+  font:inherit;font-weight:400;background:#fff;width:100%}
+.cf input:focus,.cf select:focus{outline:2px solid var(--brand);outline-offset:1px}
+.cf-count{margin:0;font-size:.85rem}
+.catalog-more{margin-top:22px;text-align:center}
+.catalog-more[hidden]{display:none}
+.catalog-empty{margin-top:22px;padding:18px 20px;background:var(--bg-soft);
+  border:1px solid var(--line);border-radius:var(--radius-lg)}
+/* 底部 SEO 内链区：三组标签，接口/尺寸/特性一个都不少，但不再各占一屏 */
+.bb-h{font-size:.95rem;margin:18px 0 8px;color:var(--ink-2)}
+.bb-h:first-of-type{margin-top:0}
+.badge-all{padding:8px 14px;font-size:.9rem;background:var(--brand-soft);color:var(--brand)}
+
+@media (max-width:900px){
+  /* 侧栏收成一个按钮：小屏上 250px 的固定栏会把网格挤成单列 */
+  .catalog{grid-template-columns:1fr;gap:16px}
+  .catalog-side{position:static}
+  .catalog-toggle{display:block;margin-bottom:10px}
+  .catalog-filters{display:none}
+  .catalog-side.open .catalog-filters{display:flex}
+}
+
+/* ---------- PDP 右侧参数表 + 旧站详情正文（2026-09-22） ---------- */
+@media (min-width:901px){.pdp>div:first-child{position:sticky;top:90px}}
+.pdp-spec-h{font-size:1.15rem;margin:26px 0 10px}
+.pdp-spec{font-size:.9rem}
+.pdp-spec th{width:42%}
+.pdp-spec tr.biz th,.pdp-spec tr.biz td{background:#f3f7fb}
+/* PDP v2（2026-09-22 排查 P1-2 样板）：询价按钮上移到参数表前；参数表默认 12 行，其余折叠（仍在 DOM 里） */
+.pdp-cta{margin:16px 0 18px}
+.spec-more{margin-top:0}
+.spec-more>summary{cursor:pointer;padding:10px 12px;font-size:.88rem;font-weight:600;color:var(--brand);
+  border:1px solid var(--line);border-top:none;border-radius:0 0 var(--radius) var(--radius);list-style:none}
+.spec-more>summary::-webkit-details-marker{display:none}
+.spec-more>summary::after{content:' ▾'}
+.spec-more[open]>summary::after{content:' ▴'}
+.spec-more[open]>summary{border-radius:0}
+.pdp-spec tr.biz td{font-family:inherit;font-weight:600}
+.pdp-desc h3{margin:1.6em 0 .5em}
+.pdp-desc figure{margin:18px 0;text-align:center}
+.pdp-desc figure img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:var(--radius)}
+.pdp-desc ul{padding-left:1.2em}
+.pdp-logistics p{font-size:1rem}
+
+/* ---------- 定制案例卡片（2026-09-22） ---------- */
+.case-card{display:flex;flex-direction:column;padding:0;overflow:hidden;color:inherit;text-decoration:none}
+.case-card:hover{border-color:var(--brand)}
+.case-thumb{aspect-ratio:4/3;background:var(--bg-soft);display:flex;align-items:center;justify-content:center;overflow:hidden}
+/* 2026-09-23 Jacken 从首页发现：cover 把竖图（德国电话 600×671）上下裁掉约 1/3。
+   改成和 .p-card .thumb 同一个修法：flex 容器 + max 宽高 + contain，整图完整显示（首页与 /cases/ 共用） */
+.case-thumb img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;padding:10px}
+.case-body{padding:16px 18px 18px}
+.case-body h2,.case-body h3{font-size:1.02rem;margin:4px 0 8px;line-height:1.35}
+.case-body p{font-size:.9rem;color:var(--ink-2);margin:0 0 10px}
+.case-date{font-size:.8rem;color:var(--muted)}
+.case-result{display:inline-block;font-size:.82rem;font-weight:600;color:var(--brand)}
+.case-kv{margin:18px 0 8px}
+.pdp-side h1{font-size:clamp(1.45rem,2.2vw,1.9rem);line-height:1.25;margin:.35em 0 .5em}
+.pdp-side>p:first-of-type{font-size:.95rem;color:var(--ink-2)}
+.pdp-spec th,.pdp-spec td{padding:7px 12px}
+/* 2026-09-23 PDP 新版式（参考 Winstar，site_data.PDP_LAYOUT 开关）：右栏只放型号/尺寸/产地/付款 + 两个按钮，
+   参数表下移到 .pdp-specs。类名全是新增的，不影响旧版式页面。 */
+.pdp-compact .pdp-side h1{font-size:clamp(1.3rem,1.8vw,1.6rem);margin:.3em 0 .2em}
+.pdp-facts{margin:14px 0 18px;border-top:1px solid var(--line)}
+/* 右栏 9 行（型号/尺寸/品牌/产地/样品MOQ/量产MOQ/交期/付款/贸易条款）：行距收紧，保证按钮仍在首屏
+   （实测 8px 时 1024×768 按钮底边超出首屏 11px，6px 后回到首屏内） */
+.pdp-facts>div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;padding:6px 2px;
+  border-bottom:1px solid var(--line)}
+.pdp-facts dt{color:var(--muted);font-size:.9rem}
+.pdp-facts dd{margin:0;font-weight:600;font-size:.95rem;color:var(--ink);overflow-wrap:anywhere}
+.pdp-compact .pdp-cta{margin:0}
+.pdp-specs>p:first-of-type{color:var(--ink-2)}
+.pdp-specs .pdp-spec{font-size:.95rem}
+@media (max-width:560px){.pdp-facts>div{grid-template-columns:118px minmax(0,1fr);gap:10px}}
+/* 2026-09-24 询盘表单第一步的附件上传区（常驻、选填，与感谢页共用 .dropzone 样式）下方提示的间距 */
+.form-card .dropzone + .hint{margin-top:8px}
+/* 2026-09-24 Jacken：手机端产品页只留 WhatsApp，不留 Request a quote（右栏 .pdp-cta + 底部 .pdp-bottom-cta 两处）。
+   电脑端不变；页脚导航里的 Request a quote 文字链接保留（导航，不是按钮）。 */
+@media (max-width:760px){
+  .pdp-cta .btn-primary,.pdp-bottom-cta .cta .btn-primary{display:none}
+  .pdp-cta .btn-wa{flex:1 1 100%;justify-content:center}
+  .pdp-bottom-cta .cta .btn-row{width:100%}
+  .pdp-bottom-cta .cta .btn-row .btn{flex:1 1 100%;justify-content:center}
+  .pdp-bottom-cta .cta .btn-ghost{background:#25d366;border-color:#25d366;color:#fff}
+}
+/* 2026-09-24 移动端排查：
+   ① 认证页信息条里是证书号/信用代码这种不可断行的长串，375px 下两列放不下，被 .factbar 的 overflow:hidden 裁掉半截
+      → 手机单列；另给所有信息条兜底 min-width:0 + 可断行，防以后再塞长串把网格撑破。
+   ② 菜单按钮 40×40，低于触控 44px 下限。 */
+.factbar div{min-width:0}
+.factbar b{overflow-wrap:anywhere}
+@media (max-width:600px){.factbar-ids{grid-template-columns:1fr}}
+.nav-toggle{min-width:44px;min-height:44px}
+/* 2026-09-24 Jacken：首页参数选型器（#find）手机端去掉，桌面不变。
+   375px 下表格要横竖双向滑（表内 520px 纵向滚动套在页面滚动里，手指容易卡在表里），只看得到 型号/尺寸/分辨率 三列，
+   行首缩略图被挤成一条细线。同样的筛选在 /products/（手机端有 Filters 折叠按钮），首屏已有「Browse N models」直达。 */
+@media (max-width:760px){#find{display:none}}

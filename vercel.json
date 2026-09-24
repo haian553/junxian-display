@@ -1,0 +1,1009 @@
+{
+  "redirects": [
+    {
+      "source": "/sale-53434015-custom-2-4-inch-tft-lcd-display-240-320-mcu-interface-350cd-m2-high-brightness-tft-display.html",
+      "destination": "/products/custom-2-4-inch-tft-lcd-display-240x320-mcu-interface-350cd-m2-high.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53394731-1-14-inch-ips-tft-lcd-display-manufacturer-135x240-pixels-8-bit-mcu-llcd-interface.html",
+      "destination": "/products/1-14-inch-ips-tft-lcd-display-manufacturer-135x240-pixels-8-bit-mcu-llcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53395099-9-inch-tft-display-1024x600-touch-screen-lcd-monitor-for-industrial-automotive.html",
+      "destination": "/products/9-inch-tft-display-1024x600-touch-screen-lcd-monitor-for-industrial.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53343875-7-inch-tft-lcd-display-450cd-m2-industrial-custom-tft-display-viewing-angle.html",
+      "destination": "/products/7-inch-tft-lcd-display-450cd-m2-industrial-custom-tft-display-viewing-angle.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53343868-300cd-m2-5-inch-tft-lcd-monitor-ips-lcd-display-module-480x854-pixels.html",
+      "destination": "/products/300cd-m2-5-inch-tft-lcd-monitor-ips-lcd-display-module-480x854-pixels.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53343846-4-3-inch-tft-lcd-display-480x272-4-3-tft-lcd-color-monitor-with-16m-colors-full-85-viewing-angle.html",
+      "destination": "/products/4-3-inch-tft-lcd-display-480x272-4-3-tft-lcd-color-monitor-with-16m-colors.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53361204-4-3-inch-lcd-touch-screen-800-480-wvga-lcd-display-260cd-m2-with-24-bit-rgb-interface.html",
+      "destination": "/products/4-3-inch-lcd-touch-screen-800x480-wvga-lcd-display-260cd-m2-with-24-bit-rgb.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53402842-450cd-m2-tft-capacitive-touch-screen-7-inch-capacitive-touch-panel-for-industrial-devices.html",
+      "destination": "/products/450cd-m2-tft-capacitive-touch-screen-7-inch-capacitive-touch-panel.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53320734-7-inch-tft-lcd-touch-screen-display-module-full-viewing-angles-adjustable-brightness.html",
+      "destination": "/products/7-inch-tft-lcd-touch-screen-display-module-full-viewing-angles-adjustable.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53395353-300cd-m2-high-brightness-lcd-display-7-inch-1024x600-for-automotive.html",
+      "destination": "/products/300cd-m2-high-brightness-lcd-display-7-inch-1024x600-for-automotive.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53366386-7-inch-tft-screen-1024x600-tft-capacitive-touchscreen-for-industrial-outdoor.html",
+      "destination": "/products/7-inch-tft-screen-1024x600-tft-capacitive-touchscreen-for-industrial.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53299118-5v-10-1-inch-hd-touch-screen-display-module-1024x600-rohs-compliant.html",
+      "destination": "/products/5v-10-1-inch-hd-touch-screen-display-module-1024x600-rohs-compliant.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53320754-2-8-inch-industrial-tft-custom-lcd-display-panel-four-channel-audio-display-panel.html",
+      "destination": "/products/2-8-inch-industrial-tft-custom-lcd-display-panel-four-channel-audio-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53303229-oem-odm-custom-lcd-monitor-multiple-tft-lcd-module-with-turnkey-solutions.html",
+      "destination": "/products/oem-odm-custom-lcd-monitor-multiple-tft-lcd-module-with-turnkey-solutions.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53284413-0-96-inch-15-6-inch-custom-lcd-display-multiple-tft-display-screen.html",
+      "destination": "/products/0-96-inch-15-6-inch-custom-lcd-display-multiple-tft-display-screen.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53283667-250cd-m2-serial-port-display-480x272-versatile-intuitive-4-3-tft-lcd-monitor.html",
+      "destination": "/products/250cd-m2-serial-port-display-480x272-versatile-intuitive-4-3-tft-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53394624-rohs-compliant-custom-lcd-display-manufacturer-multiple-oem-tft-display.html",
+      "destination": "/products/rohs-compliant-custom-lcd-display-manufacturer-multiple-oem-tft-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53402734-tn-segment-lcd-display-custom-transflective-lcd-display-manufacturer.html",
+      "destination": "/products/tn-segment-lcd-display-custom-transflective-lcd-display-manufacturer.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53267123-4-3-inch-ips-lcd-display-touch-screen-tft-color-lcd-panel-with-480-272-pixels-oem.html",
+      "destination": "/products/4-3-inch-ips-lcd-display-touch-screen-tft-color-lcd-panel-with-480x272.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53308142-10-1-inch-ips-touch-screen-lcd-display-3-3v-hd-color-lcd-panel-500cd-m2-tft-lcd-display.html",
+      "destination": "/products/10-1-inch-ips-touch-screen-lcd-display-3-3v-hd-color-lcd-panel-500cd-m2-tft.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53308793-2-inch-ips-lcd-display-240x320-pixels-with-visual-excellence-monitor.html",
+      "destination": "/products/2-inch-ips-lcd-display-240x320-pixels-with-visual-excellence-monitor.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53312344-7-inch-spi-tft-touch-screen-3-3v-ips-lcd-monitor-350cd-m2-surface-luminance.html",
+      "destination": "/products/7-inch-spi-tft-touch-screen-3-3v-ips-lcd-monitor-350cd-m2-surface-luminance.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53366212-350cd-m2-ips-lcd-display-3-5-inch-wide-80-viewing-angle-with-rgb-24-bit-interface.html",
+      "destination": "/products/350cd-m2-ips-lcd-display-3-5-inch-wide-80-viewing-angle-with-rgb-24-bit.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53383103-5-inch-ips-display-full-view-tft-lcd-module-500cd-m2-sunlight-readable-brightness.html",
+      "destination": "/products/5-inch-ips-display-full-view-tft-lcd-module-500cd-m2-sunlight-readable.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53295187-3-3v-5-0v-character-lcd-modules-16-pin-lcd-display-monochrome-multiple-sizes.html",
+      "destination": "/products/3-3v-5-0v-character-lcd-modules-16-pin-lcd-display-monochrome-multiple.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53264823-8x2-character-lcd-module-st7066-blue-monochrome-lcd-display-multiple-sizes.html",
+      "destination": "/products/8x2-character-lcd-module-st7066-blue-monochrome-lcd-display-multiple-sizes.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53327522-3-2-inch-character-lcd-modules-high-contrast-lcd-display-100cd-m2-with-wide-viewing-angle.html",
+      "destination": "/products/3-2-inch-character-lcd-modules-high-contrast-lcd-display-100cd-m2-with-wide.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53327511-custom-20x2-character-lcd-modules-blue-yellow-green-display-with-i2c-spi-6800-lcd-interface.html",
+      "destination": "/products/custom-20x2-character-lcd-modules-blue-yellow-green-display-with-i2c-spi.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53327450-lcd-16x2-alphanumeric-display-16-pin-flexible-lcd-modules-with-multi-color-backlight.html",
+      "destination": "/products/lcd-16x2-alphanumeric-display-16-pin-flexible-lcd-modules-with-multi-color.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53327409-16x2-character-lcd-module-with-multi-color-backlight-6800-interface-wide-viewing-angle-vatn-display.html",
+      "destination": "/products/16x2-character-lcd-module-with-multi-color-backlight-6800-interface-wide.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53413304-3-inch-graphic-lcd-display-3-3v-sunlight-readable-lcd-display-128x64.html",
+      "destination": "/products/3-inch-graphic-lcd-display-3-3v-sunlight-readable-lcd-display-128x64.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53411972-192-64-stn-lcd-display-2-inch-blue-cog-lcd-module-with-negative-transmissive.html",
+      "destination": "/products/192x64-stn-lcd-display-2-inch-blue-cog-lcd-module-with-negative.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53310918-192-64-graphic-lcd-display-monochrome-compact-good-visibility-cog-dot-matrix-display.html",
+      "destination": "/products/192x64-graphic-lcd-display-monochrome-compact-good-visibility-cog-dot.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53395652-2-9-inch-cog-monochrome-lcd-display-240x128-fstn-dual-interface-cog-dot-matrix-display.html",
+      "destination": "/products/2-9-inch-cog-monochrome-lcd-display-240x128-fstn-dual-interface-cog-dot.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53310923-128-x-64-graphic-lcd-display-3-2-inch-monochrome-lcd-screen-with-st7567s-driver.html",
+      "destination": "/products/128-x-64-graphic-lcd-display-3-2-inch-monochrome-lcd-screen-with-st7567s.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53311487-2-5-inch-cog-monochrome-lcd-display-150cd-m2-graphic-lcd-screen-with-spi4-interface.html",
+      "destination": "/products/2-5-inch-cog-monochrome-lcd-display-150cd-m2-graphic-lcd-screen-with-spi4.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53269409-high-backlight-brightness-segment-lcd-display-mutiple-segmented-screen-with-negative-mode.html",
+      "destination": "/products/vatn-display-100cd-m2-500cd-m2-custom-lcd-segment-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53444608-vatn-display-100cd-m2-500cd-m2-custom-lcd-segment-display.html",
+      "destination": "/products/vatn-display-100cd-m2-500cd-m2-custom-lcd-segment-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53625736-custom-segment-lcd-display-with-incell-capacitive-touchscreen-for-industrial-controls.html",
+      "destination": "/products/custom-segment-lcd-display-with-incell-capacitive-touchscreen.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53427403-0-49-inch-monochrome-oled-display-module-oem-ultra-thin-oled-display.html",
+      "destination": "/products/0-49-inch-monochrome-oled-display-module-oem-ultra-thin-oled-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53413009-monochrome-dot-matrix-1-54-inch-oled-display-128x64-pixels-i2c-interface-lcd-display.html",
+      "destination": "/products/monochrome-dot-matrix-1-54-inch-oled-display-128x64-pixels-i2c-interface.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53402786-1-46-inch-color-oled-display-module-with-8-bit-parallel-lcd-interface-30-pins-128x128-lcd-screen.html",
+      "destination": "/products/1-46-inch-color-oled-display-module-with-8-bit-parallel-lcd-interface-30.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53268634-1-3-inch-oled-lcd-display-high-res-versatile-interface-oled-screen-module-with-sh1116-driven.html",
+      "destination": "/products/1-3-inch-oled-lcd-display-high-res-versatile-interface-oled-screen-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53299585-2-42-inch-oled-display-module-monochrome-oled-dot-matrix-display-with-all-viewing-angle.html",
+      "destination": "/products/2-42-inch-oled-display-module-monochrome-oled-dot-matrix-display-with-all.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53383085-industrial-0-96-inch-oled-screen-128-64-dot-matrix-display-module-with-ssd1315z-drive.html",
+      "destination": "/products/industrial-0-96-inch-oled-screen-128x64-dot-matrix-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53444896-250cd-m2-smart-lcd-module-ips-tft-4-3-inch-capacitive-touch-screen-800x480.html",
+      "destination": "/products/4-3-inch-bms-serial-port-capacitive-lcd-touch-screen-5v-full-view-clear-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53444831-2-8-inch-ips-tft-panel-200cd-m2-backlight-lcd-display-800x480.html",
+      "destination": "/products/2-8-inch-bms-serial-port-lcd-display-ips-tft-panel-800x480-wide-viewing.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53436646-2-8-inch-bms-serial-port-lcd-display-ips-tft-panel-800x480-wide-viewing-angles.html",
+      "destination": "/products/2-8-inch-bms-serial-port-lcd-display-ips-tft-panel-800x480-wide-viewing.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53437097-4-3-inch-bms-serial-port-capacitive-lcd-touch-screen-5v-full-view-clear-lcd-display.html",
+      "destination": "/products/4-3-inch-bms-serial-port-capacitive-lcd-touch-screen-5v-full-view-clear-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53333613-3-4-inch-circular-lcd-display-high-brightness-rgb-tft-lcd-monitor-ips-for-wide-viewing.html",
+      "destination": "/products/custom-3-4-inch-round-lcd-screen-480x272-pixels-tft-color-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53444966-custom-3-4-inch-round-lcd-screen-480-272-pixels-tft-color-lcd-display-for-smartwatches.html",
+      "destination": "/products/custom-3-4-inch-round-lcd-screen-480x272-pixels-tft-color-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53445190-1-28-inch-round-lcd-display-custom-touchscreen-lcd-panel-240-240-hd-lcd-display.html",
+      "destination": "/products/1-28-inch-round-tft-lcd-display-custom-touchscreen-lcd-panel-240x240-pixels.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53258371-1-28-inch-round-tft-lcd-display-custom-touchscreen-lcd-panel-240-240-pixels-hd-lcd-display.html",
+      "destination": "/products/1-28-inch-round-tft-lcd-display-custom-touchscreen-lcd-panel-240x240-pixels.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53238091-0-96-inch-tft-display-oem-lcd-liquid-crystal-display-manufacturer.html",
+      "destination": "/products/0-96-inch-tft-display-oem-lcd-liquid-crystal-display-manufacturer.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53257516-high-resolution-tft-display-240x240-1-3-inch-lcd-display-300cd-m2.html",
+      "destination": "/products/high-resolution-tft-display-240x240-1-3-inch-lcd-display-300cd-m2.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53260538-compact-1-77-inch-lcd-tft-display-panel-250cd-m2-tft-color-lcd-display.html",
+      "destination": "/products/compact-1-77-inch-lcd-tft-display-panel-250cd-m2-tft-color-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53261815-mcu-interface-colour-tft-display-2-4-inch-with-dh-st7789v-driver.html",
+      "destination": "/products/mcu-interface-colour-tft-display-2-4-inch-with-dh-st7789v-driver.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53264446-5v-high-resolution-graphic-blue-lcd-display-5-2-inch-wide-viewing-angle-display.html",
+      "destination": "/products/5v-high-resolution-graphic-blue-lcd-display-5-2-inch-wide-viewing-angle.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53275124-7-inch-ctp-touch-screen-display-module-hd-pcap-touch-monitor.html",
+      "destination": "/products/7-inch-ctp-touch-screen-display-module-hd-pcap-touch-monitor.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53279493-3-inch-cog-monochrome-lcd-monitor-cog-dot-matrix-display-with-st7567-driver.html",
+      "destination": "/products/3-inch-cog-monochrome-lcd-monitor-cog-dot-matrix-display-with-st7567-driver.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53280796-5v-300cd-m2-hdmi-tft-lcd-display-7-inch-1024x600-capacitive-touch-screen.html",
+      "destination": "/products/5v-300cd-m2-hdmi-tft-lcd-display-7-inch-1024x600-capacitive-touch-screen.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53283562-wide-viewing-angle-smart-lcd-module-with-rgb-lcd-interface-300cd-m2-touch-screen-lcd-screen.html",
+      "destination": "/products/wide-viewing-angle-smart-lcd-module-with-rgb-lcd-interface-300cd-m2-touch.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53284448-tft-lcd-color-monitor-4-3-inch-tft-color-lcd-display-with-full-viewing-angles.html",
+      "destination": "/products/tft-lcd-color-monitor-4-3-inch-tft-color-lcd-display-with-full-viewing.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53292528-compact-1-77-inch-tft-color-lcd-display-panel-200cd-m2-128x160-pixels.html",
+      "destination": "/products/compact-1-77-inch-tft-color-lcd-display-panel-200cd-m2-128x160-pixels.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53294998-320x480-pixels-tft-lcd-display-panel-3-5-inch-lcd-display-module.html",
+      "destination": "/products/320x480-pixels-tft-lcd-display-panel-3-5-inch-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53298388-oem-2-inch-lcd-monitor-high-resolution-lcd-display-192x64-for-wearable-devices.html",
+      "destination": "/products/oem-2-inch-lcd-monitor-high-resolution-lcd-display-192x64-for-wearable.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53309580-3v-cog-monochrome-character-lcd-display-module-spi-lcd-monitor-for-consumer-electronics.html",
+      "destination": "/products/3v-cog-monochrome-character-lcd-display-module-spi-lcd-monitor-for-consumer.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53312441-100cd-m2-character-lcd-modules-custom-for-uart-rs232-usb-lcd-interfaces.html",
+      "destination": "/products/100cd-m2-character-lcd-modules-custom-for-uart-rs232-usb-lcd-interfaces.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53320867-robust-industrial-tft-display-2-4-inch-350cd-m2-brightness-for-harsh-environments.html",
+      "destination": "/products/robust-industrial-tft-display-2-4-inch-350cd-m2-brightness-for-harsh.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53320989-industrial-tft-lcd-screen-240x320-wide-viewing-angle-hd-lcd-monitor.html",
+      "destination": "/products/industrial-tft-lcd-screen-240x320-wide-viewing-angle-hd-lcd-monitor.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53322584-industrial-2-8-inch-tft-lcd-display-240x320-for-harsh-environments.html",
+      "destination": "/products/industrial-2-8-inch-tft-lcd-display-240x320-for-harsh-environments.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53322836-full-viewing-angle-4-45-inch-tft-color-lcd-module-400cd-m2-with-mipi-interface.html",
+      "destination": "/products/full-viewing-angle-4-45-inch-tft-color-lcd-module-400cd-m2-with-mipi.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53322876-wide-viewing-angle-0-96-tft-lcd-display-350cd-m2-spi-interface-lcd-display-0-96-inch.html",
+      "destination": "/products/wide-viewing-angle-0-96-tft-lcd-display-350cd-m2-spi-interface-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53322928-3-2-inch-tft-lcd-display-compact-qvga-tft-lcd-module-with-st7789-control-driver.html",
+      "destination": "/products/3-2-inch-tft-lcd-display-compact-qvga-tft-lcd-module-with-st7789-control.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53328982-15-6-inch-fhd-tft-lcd-panel-high-contrast-lcd-monitor-anti-glare-slim-design-for-laptop.html",
+      "destination": "/products/15-6-inch-fhd-tft-lcd-panel-high-contrast-lcd-monitor-anti-glare-slim.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53334667-crisp-visuals-ips-lcd-display-2-4-inch-industrial-tft-lcd-module-with-pcba.html",
+      "destination": "/products/crisp-visuals-ips-lcd-display-2-4-inch-industrial-tft-lcd-module-with-pcba.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53334813-3-2-inch-industrial-ips-tft-lcd-module-wide-viewing-angle-ips-lcd-screen.html",
+      "destination": "/products/3-2-inch-industrial-ips-tft-lcd-module-wide-viewing-angle-ips-lcd-screen.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53334979-3-5-inch-ips-display-industrial-serial-port-lcd-display-touchscreen-lcd-monitor-450cd-m2.html",
+      "destination": "/products/3-5-inch-ips-display-industrial-serial-port-lcd-display-touchscreen-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53335021-touchscreen-lcd-monitor-5-inch-tft-color-lcd-display-800-480-resolution.html",
+      "destination": "/products/touchscreen-lcd-monitor-5-inch-tft-color-lcd-display-800x480-resolution.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53335516-7-inch-ips-display-industrial-tft-color-lcd-module-with-wxga-550cd-m2-ttl-lcd-interface.html",
+      "destination": "/products/7-inch-ips-display-industrial-tft-color-lcd-module-with-wxga-550cd-m2-ttl.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53336356-128-64-monochrome-graphic-dot-matrix-lcd-module-fstn-lcd-display-for-industrial.html",
+      "destination": "/products/128x64-monochrome-graphic-dot-matrix-lcd-module-fstn-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53343005-2-8-inch-capacitive-touch-screen-tft-display-240x320-330nits-brightness.html",
+      "destination": "/products/2-8-inch-capacitive-touch-screen-tft-display-240x320-330nits-brightness.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53343133-3-inch-tft-lcd-display-500cd-m2-high-brightness-lcd-monitor-with-full-viewing-angle.html",
+      "destination": "/products/3-inch-tft-lcd-display-500cd-m2-high-brightness-lcd-monitor-with-full.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53343806-3-5-inch-industrial-color-ips-lcd-screen-240-320-lcd-color-display-with-wide-viewing-angle.html",
+      "destination": "/products/3-5-inch-industrial-color-ips-lcd-screen-240x320-lcd-color-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53353142-5v-high-contrast-ratio-lcd-display-rugged-mechanical-graphic-lcd-screen.html",
+      "destination": "/products/5v-high-contrast-ratio-lcd-display-rugged-mechanical-graphic-lcd-screen.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53355158-3-8-inch-dual-backlight-monochrome-lcd-module-3-3v-5v-graphic-lcd-screen.html",
+      "destination": "/products/3-8-inch-dual-backlight-monochrome-lcd-module-3-3v-5v-graphic-lcd-screen.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53356838-192x64-4-3-inch-monochrome-lcd-module-compact-5v-parallel-interface-graphic-lcd-screen.html",
+      "destination": "/products/192x64-4-3-inch-monochrome-lcd-module-compact-5v-parallel-interface-graphic.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53356903-240-64-dots-monochrome-graphic-lcd-display-200cd-m2-durable-construction-lcd-screen.html",
+      "destination": "/products/240x64-dots-monochrome-graphic-lcd-display-200cd-m2-durable-construction.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53357116-industrial-240x128-graphic-lcd-module-blue-monochrome-lcd-panel-with-stn-fttn-display.html",
+      "destination": "/products/industrial-240x128-graphic-lcd-module-blue-monochrome-lcd-panel-with-stn.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53360314-5-7-inch-320-240-monochrome-lcd-module-with-stn-transmissive-negative-lcd-type.html",
+      "destination": "/products/5-7-inch-320x240-monochrome-lcd-module-with-stn-transmissive-negative-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53360837-7-capacitive-touch-screen-display-ips-lcd-capacitive-touchscreen-with-gt911-controller.html",
+      "destination": "/products/7-capacitive-touch-screen-display-ips-lcd-capacitive-touchscreen-with-gt911.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53362597-1-3-inch-oled-display-module-128x64-160-viewing-angle-lcd-monitor-with-sh1106g-driver.html",
+      "destination": "/products/1-3-inch-oled-display-module-128x64-160-viewing-angle-lcd-monitor.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53362660-compact-1-54-inch-oled-display-module-power-efficiency-lcd-monitor-with-128-64-dot.html",
+      "destination": "/products/compact-1-54-inch-oled-display-module-power-efficiency-lcd-monitor.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53363224-lcd-1-44-tft-128x128-tft-display-custom-lcd-display-module-with-st7735s-driver.html",
+      "destination": "/products/lcd-1-44-tft-128x128-tft-display-custom-lcd-display-module-with-st7735s.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53366118-1-77-inch-transmissive-tn-lcd-display-128x160-tft-display-for-industrial.html",
+      "destination": "/products/1-77-inch-transmissive-tn-lcd-display-128x160-tft-display-for-industrial.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53366354-customized-tft-lcd-touch-screen-8-bit-rgb-interface-4-3-inch-capacitive-touch-screen.html",
+      "destination": "/products/customized-tft-lcd-touch-screen-8-bit-rgb-interface-4-3-inch-capacitive.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53384414-7-inch-tft-lcd-screen-500cd-m2-high-luminance-color-tft-touch-screen.html",
+      "destination": "/products/7-inch-tft-lcd-screen-500cd-m2-high-luminance-color-tft-touch-screen.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53394883-high-brightness-5-inch-lcd-monitor-500cd-m2-tft-lcd-capacitive-touchscreen.html",
+      "destination": "/products/high-brightness-5-inch-lcd-monitor-500cd-m2-tft-lcd-capacitive-touchscreen.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53395793-2-9-inch-cog-monochrome-lcd-display-240-160-4-5mm-slim-3-0v-cog-dot-matrix-display.html",
+      "destination": "/products/2-9-inch-cog-monochrome-lcd-display-240x160-4-5mm-slim-3-0v-cog-dot-matrix.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53402746-0-96-inch-oled-display-module-128x64-white-monochrome-lcd-monitor-for-wearables-iot.html",
+      "destination": "/products/0-96-inch-oled-display-module-128x64-white-monochrome-lcd-monitor.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53412225-3-inch-cog-monochrome-lcd-monitor-160x160-fstn-monochrome-lcd-screen-with-cog.html",
+      "destination": "/products/3-inch-cog-monochrome-lcd-monitor-160x160-fstn-monochrome-lcd-screen.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53413176-10-1-inch-color-tft-lcd-display-mipi-interface-high-luminance-lcd-monitor-800-1280-pixels.html",
+      "destination": "/products/10-1-inch-color-tft-lcd-display-mipi-interface-high-luminance-lcd-monitor.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53429682-1-5-inch-128-32-monochrome-lcd-display-with-sunlight-readable-low-power.html",
+      "destination": "/products/1-5-inch-128x32-monochrome-lcd-display-with-sunlight-readable-low-power.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53433947-1-77-inch-tft-lcd-display-4-bit-128-160-pixels-color-tft-display-spi-interface.html",
+      "destination": "/products/1-77-inch-tft-lcd-display-4-bit-128x160-pixels-color-tft-display-spi.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53434357-5-0-inch-monochrome-lcd-screen-240-128-stn-monochrome-lcd-panel.html",
+      "destination": "/products/5-0-inch-monochrome-lcd-screen-240x128-stn-monochrome-lcd-panel.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53435220-3-5-inch-tft-lcd-display-touch-screen-high-resolution-tft-display-320-480-pixels-oem-odm.html",
+      "destination": "/products/3-5-inch-tft-lcd-display-touch-screen-high-resolution-tft-display-320x480.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53813459-10-1-inch-tft-display-capacitive-touch-800-1280-full-view-mipi-interface.html",
+      "destination": "/products/10-1-inch-tft-display-capacitive-touch-800x1280-full-view-mipi-interface.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53815443-7-tft-lcd-display-800-480-resolution-4-wire-resistive-touch.html",
+      "destination": "/products/7-tft-lcd-display-800x480-resolution-4-wire-resistive-touch.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53874419-industrial-lcd-touch-screen-for-streamlined-production-processes.html",
+      "destination": "/products/industrial-lcd-touch-screen-for-streamlined-production-processes.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53941784-5-inch-industrial-tft-lcd-module-wide-temp-resistant-70-20-tested-with-rgb-data-bus.html",
+      "destination": "/products/5-inch-industrial-tft-lcd-module-wide-temp-resistant-70-20-tested-with-rgb.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53964415-7-inch-ips-tft-lcd-module-with-optional-capacitive-touchscreen-for-outdoor-high-definition.html",
+      "destination": "/products/7-inch-ips-tft-lcd-module-with-optional-capacitive-touchscreen-for-outdoor.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-53964729-1-3-inch-monochrome-oled-screen-ssd1306-driver-versatile-parallel-spi-i-c-interfaces-for-mcu-systems.html",
+      "destination": "/products/1-3-inch-monochrome-oled-screen-ssd1306-driver-versatile-parallel-spi-i-c.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-54109594-1000nits-2-4-high-brightness-tft-lcd-display-jm-pt095-02-240x320-dot-matrix.html",
+      "destination": "/products/1000nits-2-4-high-brightness-tft-lcd-display-jm-pt095-02-240x320-dot-matrix.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-54344104-7-inch-ips-optional-touch-custom-lcd-screen-for-various-gift-box-applications.html",
+      "destination": "/products/7-inch-ips-optional-touch-custom-lcd-screen-for-various-gift-box.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/sale-54747475-4-0-inch-3-97-inch-ips-tft-lcd-screen-480x800-spi-rgb-24-bit-interface-display-module.html",
+      "destination": "/products/4-0-inch-3-97-inch-ips-tft-lcd-screen-480x800-spi-rgb-24-bit-interface.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "destination": "/products/",
+      "statusCode": 301
+    },
+    {
+      "source": "/product.html",
+      "destination": "/products/",
+      "statusCode": 301
+    },
+    {
+      "source": "/aboutus.html",
+      "destination": "/factory.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us.html",
+      "destination": "/factory.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/about.html",
+      "destination": "/factory.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/contactus.html",
+      "destination": "/quote.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact-us.html",
+      "destination": "/quote.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/quote.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/news.html",
+      "destination": "/guides/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/guides/",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-341431-10-1-inch-tft-display-capacitive-touch-800-1280-full-view-mipi-interface.html",
+      "destination": "/categories/lcd-touch-screen-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-341623-7-tft-lcd-display-800-480-resolution-4-wire-resistive-touch.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-357185-7-inch-ips-tft-lcd-module-with-optional-capacitive-touch-screen-model-jm-pt091-00.html",
+      "destination": "/categories/lcd-touch-screen-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-402295-custom-lcd-oled-displays-made-easy.html",
+      "destination": "/categories/oled-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-402304-7-inch-ips-lcd-outdoor-touchscreen-display.html",
+      "destination": "/categories/lcd-touch-screen-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-285927-introduction-to-junxian-lcd-display-company.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-285961-jun-xian-tft-lcd-display-and-ips-lcd-display-manufacturer.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-285981-custom-oled-screen-from-junxian.html",
+      "destination": "/categories/oled-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-285982-custom-monochrome-liquid-crystal-lcd-display.html",
+      "destination": "/categories/cog-graphic-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-293749-2-8-inch-industrial-tft-lcd-display.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-293761-tft-lcd-display-pt127-01.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-295312-15-6-inch-fhd-tft-lcd-panel.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-300918-7-0-inch-tft-color-lcd-screen-jm-pt042.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-301421-1-44-inch-128-rgb-128-lcd-display-module-with-st7735s-driver-customizable-brightness-for-outdoor-use.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-301767-4-3-inch-lcd-assembly-with-capacitive-touch-screen.html",
+      "destination": "/categories/lcd-touch-screen-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-304339-7-inch-lcd-display-module-with-high-luminance-of-500-cd-m.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-305016-9-inch-durable-design-lcd-display-1024-600-touch-screen-lcd-monitor-for-industrial-automotive.html",
+      "destination": "/categories/lcd-touch-screen-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-305743-5-inch-jmt050wq3tnn-01.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-306453-10-1-inch-tft-color-lcd-display-high-luminance-lcd-monitor-with-800-1280-pixels-mipi-interface.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-308225-custom-2-4-inch-tft-color-lcd-display-with-350-cd-m.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-308226-1-5-inch-128-32-monochrome-lcd-display-with-sunlight-readable-low-power.html",
+      "destination": "/categories/cog-graphic-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-308450-2-8-inch-bms-serial-port-lcd-display-ips-tft-panel-with-800x480-wide-viewing-angles.html",
+      "destination": "/categories/smart-serial-lcd-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-308453-4-3-inch-bms-serial-port-capacitive-touch-lcd-screen-5v-full-view-clear-lcd-display.html",
+      "destination": "/categories/smart-serial-lcd-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-323884-custom-segment-lcd-display-with-incell-capacitive-touchscreen-for-industrial-controls.html",
+      "destination": "/categories/segment-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/contactnow.html",
+      "destination": "/quote.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-all.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/ai-driven-chip-inflation-2026-semiconductor-industry-wide-price-surge-358705.html",
+      "destination": "/guides/",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/lcd-display-interface-selection-guide-spi-rgb-lvds-mipi-mcu-261485.html",
+      "destination": "/guides/lcd-interface-spi-rgb-mipi-lvds-mcu.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/the-changing-trends-in-application-fields-of-customized-lcd-screens-219391.html",
+      "destination": "/guides/",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/the-development-trend-of-customized-small-and-medium-sized-lcd-screens-218050.html",
+      "destination": "/guides/",
+      "statusCode": 301
+    },
+    {
+      "source": "/cases.html",
+      "destination": "/cases/",
+      "statusCode": 301
+    },
+    {
+      "source": "/cases/leading-smart-home-brand-successfully-customizes-lcd-modules-at-junxian-38258.html",
+      "destination": "/cases/smart-home-switch-touch-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/cases/success-case-renowned-german-brand-customizes-lcd-screens-with-jun-xian-31165.html",
+      "destination": "/cases/german-brand-telephone-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/cases/customized-7-inch-lcd-modules-with-a-well-known-brand-packaging-31073.html",
+      "destination": "/cases/cosmetic-gift-box-7-inch-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/cases/customized-7-inch-lcd-modules-with-a-well-known-brand-packaging-printing-enterprise-31073.html",
+      "destination": "/cases/cosmetic-gift-box-7-inch-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supplier-4753908-tft-lcd-display",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supplier-4753919-lcd-touch-screen",
+      "destination": "/categories/lcd-touch-screen-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supplier-4753909-custom-lcd-display",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supplier-4763913-ips-lcd-display",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supplier-4753913-character-lcd-modules",
+      "destination": "/categories/character-lcd-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supplier-4753910-graphic-lcd-display",
+      "destination": "/categories/cog-graphic-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supplier-4763995-segment-lcd-display",
+      "destination": "/categories/segment-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supplier-4753911-oled-display-module",
+      "destination": "/categories/oled-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supplier-4763909-smart-lcd-module",
+      "destination": "/categories/smart-serial-lcd-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supplier-4763910-circular-lcd-display",
+      "destination": "/categories/round-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-tft-lcd-screen.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-color-tft-display.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-spi-tft-display.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-tft-lcd-touch-screen.html",
+      "destination": "/categories/lcd-touch-screen-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-high-brightness-lcd-display.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-tft-capacitive-touchscreen.html",
+      "destination": "/categories/lcd-touch-screen-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-customized-lcd-display.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-custom-made-lcd-display.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-custom-lcd-screen.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-ips-lcd-monitor.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-ips-lcd-screen.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-ips-touch-screen.html",
+      "destination": "/categories/lcd-touch-screen-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-character-lcd-display.html",
+      "destination": "/categories/character-lcd-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-character-display-module.html",
+      "destination": "/categories/character-lcd-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-monochrome-lcd-display.html",
+      "destination": "/categories/cog-graphic-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-graphic-lcd-module.html",
+      "destination": "/categories/cog-graphic-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-monochrome-lcd-module.html",
+      "destination": "/categories/cog-graphic-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-monochrome-lcd-panel.html",
+      "destination": "/categories/cog-graphic-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-segmented-lcd-display.html",
+      "destination": "/categories/segment-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-custom-segment-display.html",
+      "destination": "/categories/segment-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-custom-lcd-segment-display.html",
+      "destination": "/categories/segment-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-dot-matrix-display-module.html",
+      "destination": "/categories/cog-graphic-lcd.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-oled-lcd-display.html",
+      "destination": "/categories/oled-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-oled-screen-module.html",
+      "destination": "/categories/oled-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-liquid-crystal-display-module.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-ips-tft-panel.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-lcd-liquid-crystal-display.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-round-lcd-display.html",
+      "destination": "/categories/round-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-round-lcd-screen.html",
+      "destination": "/categories/round-lcd-display.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/buy-hd-lcd-display.html",
+      "destination": "/categories/tft-lcd-display-module.html",
+      "statusCode": 301
+    }
+  ]
+}
