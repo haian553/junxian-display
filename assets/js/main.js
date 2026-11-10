@@ -121,6 +121,13 @@
 
   document.addEventListener('submit', function (e) {
     if (e.target && e.target.classList.contains('form-card')) {
+      // FormSubmit uses _replyto for the email header. Keep the visible field
+      // named "email" for a readable message, then mirror it before submit so
+      // the mail client's Reply button targets the buyer.
+      var form = e.target;
+      var email = form.querySelector('input[name="email"]');
+      var replyTo = form.querySelector('input[name="_replyto"]');
+      if (email && replyTo) replyTo.value = email.value.trim();
       track('generate_lead', { method: 'form', page_path: location.pathname });
     }
   }, true);
